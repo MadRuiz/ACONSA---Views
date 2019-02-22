@@ -1,0 +1,44 @@
+﻿@*        @RenderBody()*@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Autores">
+    <meta name="keywords" content="au theme template">
+    <!-- Title Page-->
+    <title>ACONSA - @ViewBag.title</title>
+    <!-- Title Page-->
+    @Styles.Render("~/bundles/css")
+</head>
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        @Html.Partial("../Components/_Mobilebar")
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        @Html.Partial("../Components/_Sidebar")
+        <!-- END MENU SIDEBAR-->
+        
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+
+            <!-- HEADER DESKTOP-->
+            @Html.Partial("../Components/_Mainbar")
+            <!-- END HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            @RenderBody()
+            <!-- END MAIN CONTENT-->
+
+        </div>
+        <!-- END PAGE CONTAINER-->
+
+    </div>
+    @Scripts.Render("~/bundles/js")
+</body>
+</html>
+<!-- end document-->
