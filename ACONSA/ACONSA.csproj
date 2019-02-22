@@ -356,6 +356,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AppController.cs" />
+    <Compile Include="Controllers\MiCuentaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -374,6 +375,16 @@
     <Content Include="Views\Components\_Mainbar.cshtml" />
     <Content Include="Views\Components\_Sidebar.cshtml" />
     <Content Include="Views\Components\_Mobilebar.cshtml" />
+    <Content Include="Views\Components\_ListaPedidos.cshtml" />
+    <Content Include="Views\Components\_Footer.cshtml" />
+    <Content Include="Views\Components\_EstadisticasInicio.cshtml" />
+    <Content Include="Views\Components\_CharTwoWavesData.cshtml" />
+    <Content Include="Views\Components\_CharTwoCircleData.cshtml" />
+    <Content Include="Views\Components\_OrdersTable.cshtml" />
+    <Content Include="Views\Components\_RankingTable.cshtml" />
+    <Content Include="Views\Components\_TaskPanel.cshtml" />
+    <Content Include="Views\Components\_MessagesPanel.cshtml" />
+    <Content Include="Views\MiCuenta\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
