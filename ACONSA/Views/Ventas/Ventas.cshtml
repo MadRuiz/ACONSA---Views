@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Ventas";
+}
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="overview-wrap">
+                        <h2 class="title-1">Pedidos</h2>
+                        <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#addVenta">
+                            <i class="zmdi zmdi-plus"></i> Agregar ventas
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--Widgets-->
+            <div class="row">
+                @Html.Partial("../Components/DataTables/_VentasDataTable")
+            </div>
+            <!--End Widgets-->
+            <div class="row">
+                @Html.Partial("../Components/_Footer")
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Partial("../Components/Modals/_AgregarVenta")
+@Html.Partial("../Components/Modals/_ModificarVenta)
+
+
