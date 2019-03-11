@@ -1,24 +1,23 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Clientes";
 }
-
 <div class="main-content">
     <div class="section__content section__content--p30">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="overview-wrap">
-                        <h2 class="title-1">overview</h2>
-                        <button class="au-btn au-btn-icon au-btn--blue">
-                            <i class="zmdi zmdi-plus"></i>add item
+                        <h2 class="title-1">Clientes</h2>
+                        <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#smallmodal">
+                            <i class="zmdi zmdi-plus"></i> Agregar cliente
                         </button>
                     </div>
                 </div>
             </div>
             <!--Widgets-->
-            <div class="row m-t-25">
-                @Html.Partial("../Components/_EstadisticasInicio")
+            <div class="row">
+                @Html.Partial("../Components/_ClientesDataTable")
             </div>
             <!--End Widgets-->
             <div class="row">
@@ -27,3 +26,5 @@
         </div>
     </div>
 </div>
+@Html.Partial("../Components/Modals/_AgregarCliente")
+@Html.Partial("../Components/Modals/_ModificarCliente")

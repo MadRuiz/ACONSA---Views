@@ -1,24 +1,23 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Pedidos";
 }
-
 <div class="main-content">
     <div class="section__content section__content--p30">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="overview-wrap">
-                        <h2 class="title-1">overview</h2>
-                        <button class="au-btn au-btn-icon au-btn--blue">
-                            <i class="zmdi zmdi-plus"></i>add item
+                        <h2 class="title-1">Pedidos</h2>
+                        <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#addPedido">
+                            <i class="zmdi zmdi-plus"></i> Agregar pedido
                         </button>
                     </div>
                 </div>
             </div>
             <!--Widgets-->
-            <div class="row m-t-25">
-                @Html.Partial("../Components/_EstadisticasInicio")
+            <div class="row">
+                @Html.Partial("../Components/DataTables/_PedidosDataTable")
             </div>
             <!--End Widgets-->
             <div class="row">
@@ -27,3 +26,6 @@
         </div>
     </div>
 </div>
+@Html.Partial("../Components/Modals/_AgregarPedido")
+@Html.Partial("../Components/Modals/_ModificarPedido")
+

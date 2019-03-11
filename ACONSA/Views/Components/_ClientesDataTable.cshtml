@@ -1,0 +1,74 @@
+﻿<div class="col-md-12">
+    <!-- DATA TABLE -->
+    <hr />
+    <div class="table-data__tool">
+        <form class="form-header" action="" method="POST">
+            <input class="au-input au-input--xl" type="text" name="search"
+                   placeholder="Buscar por código, nombre o NIT" />
+            <button class="au-btn--submit" type="submit">
+                <i class="zmdi zmdi-search"></i>
+            </button>
+        </form>
+
+    </div>
+    <div class="table-data__tool">
+        <div class="table-data__tool-left">
+            <div class="rs-select2--light rs-select2--md">
+                <select class="js-select2" name="property">
+                    <option selected="selected">Ordenar</option>
+                    <option value="">Código</option>
+                    <option value="">Nombre</option>
+                    <option value="">Cantidad de pedidos</option>
+                    <option value="">Cantidad de compras</option>
+                </select>
+                <div class="dropDownSelect2"></div>
+            </div>
+
+        </div>
+        <div class="table-data__tool-right">
+            <button class="au-btn-filter">
+                <i class="zmdi zmdi-import-export"></i>Exportar
+            </button>
+
+        </div>
+    </div>
+    <div class="table-responsive table-responsive-data2 m-b-30">
+        <table class="table table-data2">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <td></td>
+                    <th>NRC</th>
+                    <th>NIT</th>
+                    <th>DUI</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="spacer"></tr>
+                <tr class="">
+                    <td>####-#</td>
+                    <td colspan="2">
+                        Nombre del Cliente
+                    </td>
+                    <td class="desc">#######</td>
+                    <td>###-######-#</td>
+                    <td>########-#</td>
+                    <td>
+                        <div class="table-data-feature">
+                            <button class="item" data-toggle="modal" data-target="#editPedido">
+                                <i class="zmdi zmdi-edit"></i> 
+                            </button>
+                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                <i class="zmdi zmdi-delete"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- END DATA TABLE -->
+</div>
+
