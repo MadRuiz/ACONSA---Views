@@ -381,14 +381,14 @@
     <Content Include="Views\Components\_ListaPedidos.cshtml" />
     <Content Include="Views\Components\_Footer.cshtml" />
     <Content Include="Views\Components\_EstadisticasInicio.cshtml" />
-    <Content Include="Views\Components\_CharTwoWavesData.cshtml" />
-    <Content Include="Views\Components\_CharTwoCircleData.cshtml" />
+    <Content Include="Views\Components\Charts\_CharTwoWavesData.cshtml" />
+    <Content Include="Views\Components\Charts\_CharTwoCircleData.cshtml" />
     <Content Include="Views\Components\_OrdersTable.cshtml" />
     <Content Include="Views\Components\_RankingTable.cshtml" />
     <Content Include="Views\Components\_TaskPanel.cshtml" />
     <Content Include="Views\Components\_MessagesPanel.cshtml" />
     <Content Include="Views\MiCuenta\Login.cshtml" />
-    <Content Include="Views\Components\_ClientesDataTable.cshtml" />
+    <Content Include="Views\Components\DataTables\_ClientesDataTable.cshtml" />
     <Content Include="Views\Clientes\Index.cshtml" />
     <Content Include="Views\Components\Modals\_AgregarCliente.cshtml" />
     <Content Include="Views\Components\Modals\_ModificarCliente.cshtml" />
@@ -398,6 +398,9 @@
     <Content Include="Views\Components\DataTables\_PedidosDataTable.cshtml" />
     <Content Include="Views\Ventas\Ventas.cshtml" />
     <Content Include="Views\Components\DataTables\_VentasDataTable.cshtml" />
+    <Content Include="Views\Producciones\Index.cshtml" />
+    <Content Include="Views\Bordados\Index.cshtml" />
+    <Content Include="Views\Components\DataTables\_PedidosBordadosDataTables.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -408,7 +411,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Components\Charts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

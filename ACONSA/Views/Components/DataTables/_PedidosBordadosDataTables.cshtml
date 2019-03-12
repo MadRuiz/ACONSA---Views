@@ -2,16 +2,6 @@
     <!-- DATA TABLE -->
     <hr />
     <div class="table-data__tool">
-        <form class="form-header" action="" method="POST">
-            <input class="au-input au-input--xl" type="text" name="search"
-                   placeholder="Buscar por código, nombre o NIT" />
-            <button class="au-btn--submit" type="submit">
-                <i class="zmdi zmdi-search"></i>
-            </button>
-        </form>
-
-    </div>
-    <div class="table-data__tool">
         <div class="table-data__tool-left">
             <div class="rs-select2--light rs-select2--md">
                 <select class="js-select2" name="property">
@@ -36,13 +26,11 @@
         <table class="table table-data2">
             <thead>
                 <tr>
-                    <th>Código</th>
-                    <th>Nombre</th>
-                    <td></td>
-                    <th>NRC</th>
+                    <th>Cliente</th>
+                    <th>Almacén</th>
+                    <th></th>
                     <th>NIT</th>
                     <th>DUI</th>
-                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -57,8 +45,8 @@
                     <td>########-#</td>
                     <td>
                         <div class="table-data-feature">
-                            <button class="item" data-toggle="modal" data-target="#editPedido">
-                                <i class="zmdi zmdi-edit"></i> 
+                            <button class="item" data-toggle="modal" data-target="#editCliente">
+                                <i class="zmdi zmdi-edit"></i>
                             </button>
                             <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
                                 <i class="zmdi zmdi-delete"></i>

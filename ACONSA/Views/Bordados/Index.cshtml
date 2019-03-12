@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Clientes";
+    ViewBag.Title = "Bordados";
 }
 <div class="main-content">
     <div class="section__content section__content--p30">
@@ -8,16 +8,16 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="overview-wrap">
-                        <h2 class="title-1">Clientes</h2>
-                        <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#addCliente">
-                            <i class="zmdi zmdi-plus"></i> Agregar cliente
-                        </button>
+                        <h2 class="title-1">Pedidos</h2>
+                        <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#addPedido">
+                            <i class="zmdi zmdi-plus"></i> Agregar pedido
+                        </button>x
                     </div>
                 </div>
             </div>
             <!--Widgets-->
             <div class="row">
-                @Html.Partial("../Components/DataTables/_ClientesDataTable")
+                @Html.Partial("../Components/DataTables/_PedidosBordadosDataTable")
             </div>
             <!--End Widgets-->
             <div class="row">
@@ -26,5 +26,6 @@
         </div>
     </div>
 </div>
-@Html.Partial("../Components/Modals/_AgregarCliente")
-@Html.Partial("../Components/Modals/_ModificarCliente")
+@Html.Partial("../Components/Modals/_AgregarPedidoBordado")
+@Html.Partial("../Components/Modals/_ModificarPedidoBordado")
+
