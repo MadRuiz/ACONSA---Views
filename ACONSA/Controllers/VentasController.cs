@@ -13,5 +13,25 @@ namespace ACONSA.Controllers
         {
             return View();
         }
+        public ActionResult CRF()
+        {
+            return View("Credito_Fiscal");
+        }
+        public ActionResult COF()
+        {
+            return View("Consumidor_Final");
+        }
+        public ActionResult NR()
+        {
+            return View("Nota_Remision");
+        }
+        public ActionResult NDF()
+        {
+            return View("Nota_Credito_Fiscal");
+        }
+        public ActionResult NCF()
+        {
+            return View("Nota_Debito_Fiscal");
+        }
     }
 }

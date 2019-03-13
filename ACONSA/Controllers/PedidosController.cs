@@ -13,5 +13,13 @@ namespace ACONSA.Controllers
         {
             return View();
         }
+        public ActionResult Bordados()
+        {
+            return View("../Bordados/Index");
+        }
+        public ActionResult Produccion()
+        {
+            return View("../Produccion/Index");
+        }
     }
 }

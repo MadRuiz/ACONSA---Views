@@ -1,7 +1,7 @@
 ﻿<aside class="menu-sidebar d-none d-lg-block">
     <div class="logo">
         <a href="#">
-            <img src="~/Content/images/icon/logo.png" alt="ACONSA"/>
+            <img src="@*~/Content/images/icon/logo.png*@" alt="ACONSA"/>
         </a>
     </div>
     <div class="menu-sidebar__content js-scrollbar1">
@@ -23,12 +23,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="@Url.Action("Index","Pedidos")">
+                    <a href="@Url.Action("Produccion","Pedidos")">
                         <i class="zmdi zmdi-trending-flat"></i> Pedidos de Producción
                     </a>
                 </li>
                 <li>
-                    <a href="@Url.Action("Index","Bordados")">
+                    <a href="@Url.Action("Bordados","Pedidos")">
                         <i class="zmdi zmdi-trending-flat"></i> Pedidos de Bordado
                     </a>
                 </li>
@@ -38,27 +38,27 @@
                     </a>
                 </li>
                 <li>
-                    <a href="@Url.Action("Index","Pedidos")">
+                    <a href="@Url.Action("CRF","Ventas")">
                         <i class="zmdi zmdi-trending-flat"></i> Crédito Fiscal
                     </a>
                 </li>
                 <li>
-                    <a href="@Url.Action("Index","Bordados")">
+                    <a href="@Url.Action("COF","Ventas")">
                         <i class="zmdi zmdi-trending-flat"></i> Consumidor Final
                     </a>
                 </li>
                 <li>
-                    <a href="@Url.Action("Index","Bordados")">
+                    <a href="@Url.Action("NR","Ventas")">
                         <i class="zmdi zmdi-trending-flat"></i> Nota de Remisión
                     </a>
                 </li>
                 <li>
-                    <a href="@Url.Action("Index","Bordados")">
+                    <a href="@Url.Action("NDF","Ventas")">
                         <i class="zmdi zmdi-trending-flat"></i> Nota de Débito Fiscal
                     </a>
                 </li>
                 <li>
-                    <a href="@Url.Action("Index","Bordados")">
+                    <a href="@Url.Action("NCF","Ventas")">
                         <i class="zmdi zmdi-trending-flat"></i> Nota de Crédito Fiscal
                     </a>
                 </li>

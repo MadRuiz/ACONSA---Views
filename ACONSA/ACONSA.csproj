@@ -394,18 +394,26 @@
     <Content Include="Views\Components\Modals\_AgregarCliente.cshtml" />
     <Content Include="Views\Components\Modals\_ModificarCliente.cshtml" />
     <Content Include="Views\Pedidos\Index.cshtml" />
-    <Content Include="Views\Components\Modals\_AgregarPedido.cshtml" />
-    <Content Include="Views\Components\Modals\_ModificarPedido.cshtml" />
     <Content Include="Views\Components\DataTables\_PedidosDataTable.cshtml" />
     <Content Include="Views\Ventas\Ventas.cshtml" />
-    <Content Include="Views\Components\DataTables\_VentasDataTable.cshtml" />
-    <Content Include="Views\Producciones\Index.cshtml" />
+    <Content Include="Views\Components\DataTables\_CRFDataTable.cshtml" />
+    <Content Include="Views\Produccion\Index.cshtml" />
     <Content Include="Views\Bordados\Index.cshtml" />
-    <Content Include="Views\Components\DataTables\_PedidosBordadosDataTables.cshtml" />
+    <Content Include="Views\Components\DataTables\_BordadoDataTable.cshtml" />
     <Content Include="Views\Productos\Index.cshtml" />
     <Content Include="Views\Components\DataTables\_ProductosDataTable.cshtml" />
-    <Content Include="Views\Components\Modals\_AgregarProducto.cshtml" />
-    <Content Include="Views\Components\Modals\_ModificiarProducto.cshtml" />
+    <Content Include="Views\Components\FormViews\_PedidosBordado.cshtml" />
+    <Content Include="Views\Components\FormViews\_PedidosProduccion.cshtml" />
+    <Content Include="Views\Ventas\Credito_Fiscal.cshtml" />
+    <Content Include="Views\Ventas\Nota_Remision.cshtml" />
+    <Content Include="Views\Ventas\Consumidor_Final.cshtml" />
+    <Content Include="Views\Ventas\Nota_Debito_Fiscal.cshtml" />
+    <Content Include="Views\Ventas\Nota_Credito_Fiscal.cshtml" />
+    <Content Include="Views\Components\DataTables\_ProduccionDataTable.cshtml" />
+    <Content Include="Views\Components\DataTables\_COFDataTable.cshtml" />
+    <Content Include="Views\Components\DataTables\_NCFDataTable.cshtml" />
+    <Content Include="Views\Components\DataTables\_NDFDataTable.cshtml" />
+    <Content Include="Views\Components\DataTables\_NRDataTable.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,7 +1,8 @@
-﻿@* Llamar a tabs de form y reporte en bordado*@
+﻿@* Llamar a tabs de form y reporte en produccion*@
+@* Llamar a tabs de form y reporte en bordado*@
 
 @{
-    ViewBag.Title = "Clientes";
+    ViewBag.Title = "Ventas [Consumidor Final]";
 }
 <div class="main-content">
     <div class="section__content section__content--p30">
@@ -9,7 +10,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="overview-wrap">
-                        <h2 class="title-1">Pedidos a Bordado</h2>
+                        <h2 class="title-1">Venta por Consumidor Final</h2>
                     </div>
                 </div>
             </div>
@@ -25,14 +26,12 @@
                                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
                                            aria-selected="true">Listado</a>
                                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
-                                           aria-selected="false"><i class="fa fa-plus"></i> Agregar </a>
+                                           aria-selected="false"><i class="fa fa-plus"></i>Agregar</a>
                                     </div>
                                 </nav>
                                 <div class="tab-content pl-3 pt-2" id="nav-tabContent">
                                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                        <p>
-                                            DataTable aquí
-                                        </p>
+                                        @Html.Partial("../Components/DataTables/_COFDataTable")
                                     </div>
                                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                         <p>
