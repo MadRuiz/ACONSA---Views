@@ -359,6 +359,7 @@
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\MiCuentaController.cs" />
     <Compile Include="Controllers\PedidosController.cs" />
+    <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Controllers\VentasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -401,6 +402,10 @@
     <Content Include="Views\Producciones\Index.cshtml" />
     <Content Include="Views\Bordados\Index.cshtml" />
     <Content Include="Views\Components\DataTables\_PedidosBordadosDataTables.cshtml" />
+    <Content Include="Views\Productos\Index.cshtml" />
+    <Content Include="Views\Components\DataTables\_ProductosDataTable.cshtml" />
+    <Content Include="Views\Components\Modals\_AgregarProducto.cshtml" />
+    <Content Include="Views\Components\Modals\_ModificiarProducto.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

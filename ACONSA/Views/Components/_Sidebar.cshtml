@@ -1,7 +1,7 @@
 ﻿<aside class="menu-sidebar d-none d-lg-block">
     <div class="logo">
         <a href="#">
-            <img src="~/Content/images/icon/logo.png" alt="ACONSA" />
+            <img src="~/Content/images/icon/logo.png" alt="ACONSA"/>
         </a>
     </div>
     <div class="menu-sidebar__content js-scrollbar1">
@@ -14,35 +14,57 @@
                 </li>
                 <li>
                     <a href="@Url.Action("Index","Clientes")">
-                        <i class="fas fa-chart-bar"></i>Clientes
+                        <i class="zmdi zmdi-accounts-alt"></i><strong>Clientes</strong>
                     </a>
                 </li>
-                <li class="has-sub">
-                    <a class="js-arrow" href="#">
-                        <i class="fas fa-copy"></i>Pedidos
+                <li>
+                    <a href="#">
+                        <i class="zmdi zmdi-book"></i><strong>Pedidos</strong>
                     </a>
-                    <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
-                        <li>
-                            <a href="@Url.Action("Index","Pedidos")">Produción</a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Index","Bordados")">Bordados</a>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <a href="@Url.Action("Index","Pedidos")">
-                        <i class="fas fa-table"></i>Pedidos
+                        <i class="zmdi zmdi-trending-flat"></i> Pedidos de Producción
                     </a>
                 </li>
                 <li>
-                    <a href="@Url.Action("Index","Ventas")">
-                        <i class="far fa-check-square"></i>Ventas
+                    <a href="@Url.Action("Index","Bordados")">
+                        <i class="zmdi zmdi-trending-flat"></i> Pedidos de Bordado
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="zmdi zmdi-assignment"></i><strong>Ventas</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index","Pedidos")">
+                        <i class="zmdi zmdi-trending-flat"></i> Crédito Fiscal
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index","Bordados")">
+                        <i class="zmdi zmdi-trending-flat"></i> Consumidor Final
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index","Bordados")">
+                        <i class="zmdi zmdi-trending-flat"></i> Nota de Remisión
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index","Bordados")">
+                        <i class="zmdi zmdi-trending-flat"></i> Nota de Débito Fiscal
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index","Bordados")">
+                        <i class="zmdi zmdi-trending-flat"></i> Nota de Crédito Fiscal
                     </a>
                 </li>
                 <li>
                     <a href="@Url.Action("Index","Stats")">
-                        <i class="fas fa-calendar-alt"></i>Estadísticas
+                        <i class="zmdi zmdi-chart"></i><strong> Estadísticas</strong>
                     </a>
                 </li>
             </ul>
