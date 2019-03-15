@@ -1,7 +1,7 @@
 ﻿@* Llamar a tabs de form y reporte en bordado*@
 
 @{
-    ViewBag.Title = "Clientes";
+    ViewBag.Title = "Pedidos";
 }
 <div class="main-content">
     <div class="section__content section__content--p30">
@@ -24,7 +24,7 @@
                                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
                                            aria-selected="true">Listado</a>
                                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
-                                           aria-selected="false"><i class="fa fa-plus"></i> Agregar</a>
+                                           aria-selected="false"><i class="fa fa-plus"></i>Agregar</a>
                                     </div>
                                 </nav>
                                 <div class="tab-content pl-3 pt-2 active" id="nav-tabContent">
@@ -48,3 +48,17 @@
         </div>
     </div>
 </div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/table2excel.js"></script>
+    <script type="text/javascript">
+        $('#btn').click(function () {
+            $('.table').table2excel({
+                exclude: ".noExl",
+                name: "My Bio",
+                filename: "OrdenPedido"
+            });
+        });
+    </script>
+}
+@Html.Partial("../Components/Modals/_ExportarPedidoExcel")

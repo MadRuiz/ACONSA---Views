@@ -12,12 +12,6 @@
             </div>
 
         </div>
-        <div class="table-data__tool-right">
-            <button class="au-btn-filter">
-                <i class="zmdi zmdi-import-export"></i>Exportar
-            </button>
-
-        </div>
     </div>
     <!-- DATA TABLE -->
     <table class="table">
@@ -26,7 +20,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Cliente</th>
                 <th scope="col">Entrega</th>
-                <th scope="col" colspan="3"></th>
+                <th scope="col" colspan="4"></th>
             </tr>
         </thead>
         <tbody>
@@ -37,6 +31,11 @@
                 <td><i class="fa fa-list-alt"></i></td>
                 <td><i class="fa fa-edit"></i></td>
                 <td><i class="fa fa-remove"></i></td>
+                <td>
+                    <button class="au-btn au-btn-icon au-btn--green au-btn--small" data-toggle="modal" data-target="#exportPedido">
+                        <i class="zmdi zmdi-plus"></i> Exportar
+                    </button>
+                </td>
             </tr>
         </tbody>
     </table>

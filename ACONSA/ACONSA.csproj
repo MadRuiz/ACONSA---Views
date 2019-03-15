@@ -355,6 +355,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\Moment.js" />
+    <Content Include="Scripts\table2excel.js" />
+    <Content Include="Scripts\table2excel.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -419,6 +421,7 @@
     <Content Include="Views\Components\DataTables\_NCFDataTable.cshtml" />
     <Content Include="Views\Components\DataTables\_NDFDataTable.cshtml" />
     <Content Include="Views\Components\DataTables\_NRDataTable.cshtml" />
+    <Content Include="Views\Components\Modals\_ExportarPedidoExcel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

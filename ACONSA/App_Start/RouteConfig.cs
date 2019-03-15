@@ -16,7 +16,7 @@ namespace ACONSA
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Pedidos", action = "Produccion", id = UrlParameter.Optional }
+                defaults: new { controller = "App", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
