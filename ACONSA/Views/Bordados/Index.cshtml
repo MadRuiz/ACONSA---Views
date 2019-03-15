@@ -1,8 +1,11 @@
 ﻿@* Llamar a tabs de form y reporte en bordado*@
 
 @{
-    ViewBag.Title = "Clientes";
+    ViewBag.Title = "Bordadoss";
 }
+@*<link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css" rel="stylesheet" />*@
+@*<link href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" rel="stylesheet" media="print" />*@
+
 <div class="main-content">
     <div class="section__content section__content--p30">
         <div class="container-fluid">
@@ -37,7 +40,7 @@
                                         @Html.Partial("../Components/DataTables/_BordadoDataTable")
                                     </div>
                                     <div class="tab-pane fade " id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                        
+
                                         <div class="row">
                                             @Html.Partial("../Components/FormViews/_PedidosBordado")
                                         </div>
@@ -56,3 +59,14 @@
         </div>
     </div>
 </div>
+@section Scripts{
+    <script src="~/Scripts/Moment.js"></script>
+    <script src="~/Scripts/Fullcalendar.min.js"></script>
+    <script src="~/Scripts/Fullcalendar.es.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+        })
+    </script>
+}
