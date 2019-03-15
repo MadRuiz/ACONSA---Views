@@ -12,6 +12,7 @@
     <title>ACONSA - @ViewBag.title</title>
     <!-- Title Page-->
     @Styles.Render("~/bundles/css")
+    @RenderSection("calStyles", required:false)
 </head>
 <body class="animsition">
     <div class="page-wrapper">
@@ -39,6 +40,7 @@
 
     </div>
     @Scripts.Render("~/bundles/js")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
 <!-- end document-->

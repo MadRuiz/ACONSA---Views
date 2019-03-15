@@ -13,7 +13,6 @@
                     </div>
                 </div>
             </div>
-            <hr />
 
             <div class="row">
                 <div class="col-lg-12">
@@ -22,7 +21,7 @@
                             <div class="default-tab">
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
                                            aria-selected="true">Listado</a>
                                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
                                            aria-selected="false"><i class="fa fa-plus"></i> Agregar</a>
@@ -32,7 +31,7 @@
                                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                         @Html.Partial("../Components/DataTables/_ProduccionDataTable")
                                     </div>
-                                    <div class="tab-pane fade active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                         @Html.Partial("../Components/FormViews/_PedidosProduccion")
                                     </div>
                                 </div>
