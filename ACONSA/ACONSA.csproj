@@ -381,7 +381,7 @@
     <Content Include="Views\Components\_Mobilebar.cshtml" />
     <Content Include="Views\Components\_ListaPedidos.cshtml" />
     <Content Include="Views\Components\_Footer.cshtml" />
-    <Content Include="Views\Components\_EstadisticasInicio.cshtml" />
+    <Content Include="Views\Components\Charts\_EstadisticasInicio.cshtml" />
     <Content Include="Views\Components\Charts\_CharTwoWavesData.cshtml" />
     <Content Include="Views\Components\Charts\_CharTwoCircleData.cshtml" />
     <Content Include="Views\Components\_OrdersTable.cshtml" />
