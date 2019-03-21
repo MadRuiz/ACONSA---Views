@@ -402,7 +402,7 @@
     <Content Include="Views\Components\Modals\_ModificarCliente.cshtml" />
     <Content Include="Views\Pedidos\Index.cshtml" />
     <Content Include="Views\Components\DataTables\_PedidosDataTable.cshtml" />
-    <Content Include="Views\Ventas\Ventas.cshtml" />
+    <Content Include="Views\Ventas\Index.cshtml" />
     <Content Include="Views\Components\DataTables\_CRFDataTable.cshtml" />
     <Content Include="Views\Produccion\Index.cshtml" />
     <Content Include="Views\Bordados\Index.cshtml" />
@@ -422,6 +422,7 @@
     <Content Include="Views\Components\DataTables\_NDFDataTable.cshtml" />
     <Content Include="Views\Components\DataTables\_NRDataTable.cshtml" />
     <Content Include="Views\Components\Modals\_ExportarPedidoExcel.cshtml" />
+    <Content Include="Views\Components\FormViews\_VentaNueva.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
