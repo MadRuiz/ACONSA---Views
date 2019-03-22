@@ -1,23 +1,40 @@
 ﻿<div class="">
     <form class="container">
         <div class="row">
-            <div class="form-group col-5">
+            <div class="col-12 card bg-primary"><h5 class="text-uppercase text-white">Datos de la factura</h5></div>
+            <!--Fecha-->
+            <div class="form-group col-3">
                 <label>Fecha: </label>
                 <input type="text" class="form-control" id="" disabled placeholder="#-###" value="@DateTime.Now.Date">
             </div>
-            <div class="form-group col-7">
-                <label>Mecan.: </label>
+            <!--Usuario-->
+            <div class="form-group col-6">
+                <label>Vend: </label>
                 <input name="" type="text" class="form-control" data-val="true"
-                        autocomplete="off"
-                        list="ListaMecan">
+                       autocomplete="off"
+                       list="ListaMecan">
                 <datalist id="ListaMecan">
                     <option>Mecan 1</option>
                     <option>Mecan 2</option>
                 </datalist>
             </div>
+            <!--Tipo Factura-->
+            <div class="form-group col-3">
+                <label class="control-label mb-1">Tipo de Factura: </label>
+                <input name="" type="text" class="form-control cc-name valid" data-val="true"
+                       autocomplete="off" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error"
+                       list="TipoFacturaLista">
+                <datalist id="TipoFacturaLista">
+                    <option>Crédito Fiscal</option>
+                    <option>Nota de Remisión</option>
+                    <option>Al Consmidor Final</option>
+                </datalist>
+            </div>
         </div>
-        <hr />
+        <br />
         <div class="row">
+            <div class="col-12 card bg-primary"><h5 class="text-uppercase text-white">Datos del cliente</h5></div>
+            <!--Codigo del cliente-->
             <div class="form-group col-2">
                 <label>Código: </label>
                 <input type="text" class="form-control" id="" placeholder="#-###">
@@ -33,72 +50,90 @@
                     <option>#-#### | Laura Esmeralda</option>
                 </datalist>
             </div>
-            <div class="form-group col-4">
-                <label class="control-label mb-1">Tipo de Factura: </label>
-                <input name="" type="text" class="form-control cc-name valid" data-val="true"
-                       autocomplete="off" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error"
-                       list="TipoFacturaLista">
-                <datalist id="TipoFacturaLista">
-                    <option>Crédito Fiscal</option>
-                    <option>Nota de Remisión</option>
-                    <option>Al Consmidor Final</option>
-                </datalist>
-            </div>
-            <div class="form-group col-8">
-                <label for="">Dirección: </label>
-                <input type="text" class="form-control" id="" placeholder="">
-            </div>
-            <div class="form-group col-5">
-                <label class="control-label mb-1">Departamento: </label>
-                <input name="" type="text" class="form-control cc-name valid" data-val="true"
-                       autocomplete="off" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error"
-                       list="DeptoLista">
-                <datalist id="DeptoLista">
-                    <option>Depto 1</option>
-                    <option>Depto 14 </option>
-                </datalist>
-            </div>
-            <div class="form-group col-7">
-                <label class="control-label mb-1">Municipio: </label>
-                <input name="" type="text" class="form-control cc-name valid" data-val="true"
-                       autocomplete="off" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error"
-                       list="MunicipioLista">
-                <datalist id="MunicipioLista">
-                    <option>Municipio 1</option>
-                    <option>Municipio 252 </option>
-                </datalist>
-            </div>
-            <div class="form-group col-4">
-                <label for="">DUI: </label>
-                <input type="number" class="form-control" id="" placeholder="">
-            </div>
-            <div class="form-group col-4">
-                <label for="">NIT: </label>
-                <input type="number" class="form-control" id="" placeholder="">
-            </div>
-            <div class="form-group col-4">
-                <label for="">NRC: </label>
-                <input type="number" class="form-control" id="" placeholder="">
-            </div>
-            <div class="col-12">
-                <hr />
-            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-12 card bg-primary"><h5 class="text-uppercase text-white">Detalle de la venta</h5></div>
             <div class="form-group col-12">
-                <label for="">Pedido No. </label>
+                <label>Pedido No. </label>
                 <input type="number" class="form-control" id="" placeholder="######" disabled>
             </div>
-            <div class="form-group col-8">
-                @* INSERTE EL IR AGREGANDO ITEMS AQUÍ *@
+            <div class="form-group col-12 ">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="bg-primary text-white text-">
+                            <th>Código</th>
+                            <th>Item</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                            <th colspan="2">Total </th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td class="">
+                            <input type="text" class="form-control input-sm" id="" placeholder="####">
+                        </td>
+                        <td class="">
+                            <input type="text" class="form-control input-sm" id="" placeholder="Item">
+                        </td>
+                        <td class="">
+                            <input type="number" class="form-control input-sm" id="" placeholder="Cantidad">
+                        </td>
+                        <td>
+                            $00.00
+                        </td>
+                        <td>
+                            $000.00
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default" id=""><i class="fa fa-plus"></i></button>
+
+                            <button type="button" class="btn btn-default" id=""><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="">
+                            <input type="text" class="form-control input-sm" id="" placeholder="##########">
+                        </td>
+                        <td class="">
+                            <input type="text" class="form-control input-sm" id="" placeholder="Item">
+                        </td>
+                        <td class="">
+                            <input type="number" class="form-control input-sm" id="" placeholder="Cantidad">
+                        </td>
+                        <td>
+                            $00.00
+                        </td>
+                        <td>
+                            $000.00
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default" id=""><i class="fa fa-plus"></i></button>
+
+                            <button type="button" class="btn btn-default" id=""><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-right"><strong>Sub Total:</strong></td>
+                        <td colspan="2" class="text-left"><strong><i>$ 000.00</i></strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-right"><strong>Descuento:</strong></td>
+                        <td colspan="2"><input type="number" class="form-control input-sm" id="" placeholder="$00.00"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="text-right"><strong>Total</strong></td>
+                        <td colspan="2" class="text-left"><strong><i>$ 0000.00</i></strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td colspan="2"><a href="#" class="btn btn-primary btn-block">Facturar</a></td>
+                    </tr>
+
+                </table>
             </div>
+            <hr />
         </div>
-        <div class="row">
-            @* INSERTE EL IR VIENDO LA TABLA AQUÍ *@
-            <div class="pull-right col-12">
-                <a href="#" class="btn btn-primary text-left">
-                    <i class="fa fa-dollar"></i> 
-                    Facturar
-                </a>
-            </div>
-        </div>
+        
     </form>
 </div>
